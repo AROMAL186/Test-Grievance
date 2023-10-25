@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <style>
+        /* Embedded CSS styles for the progress page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #007bff;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Progress container styles */
+        .progress-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Progress box styles */
+        .progress-box {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar for the progress page -->
+    <div class="navbar">
+        <a href="/dashboard">Home</a> <!-- Link to the home page -->
+        <a href="/login" style="float: right;">Logout</a> <!-- Logout button -->
+    </div>
+
+    <!-- Progress container -->
+    <div class="progress-container">
+        <h1>Progress Page</h1>
+        <div class="progress-box">
+            <p>Progress 1: 50%</p>
+        </div>
+        <div class="progress-box">
+            <p>Progress 2: 75%</p>
+        </div>
+        <div class="progress-box">
+            <p>Progress 3: 90%</p>
+        </div>
+    </div>
+</body>
+</html>

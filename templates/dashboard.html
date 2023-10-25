@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        /* Embedded CSS styles for the dashboard page */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #33d9b2 0%, #007bff 100%); /* Gradient background */
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            animation: waveBackground 10s linear infinite; /* Wave animation */
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #007bff;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+
+        .navbar a.right {
+            float: right;
+        }
+
+        /* Dashboard container styles */
+        .dashboard-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Content styles */
+        .content {
+            text-align: center;
+        }
+
+        /* Button styles */
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Keyframes for wave animation */
+        @keyframes waveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar for the dashboard -->
+    <div class="navbar">
+        <a href="/dashboard">Home</a> <!-- Link to the dashboard -->
+        <a href="/fill">Fill Petition</a>
+        <a href="/progress">Progress</a>
+        <a href="/login" class="right">Logout</a> <!-- Logout button on the right -->
+    </div>
+
+    <div class="dashboard-container">
+        <h1>Welcome to the Dashboard, {{ username }}!</h1>
+
+        <div class="content">
+            <p>This is your private dashboard content.</p>
+            <a href="/fill" class="btn">Fill Petition</a>
+        </div>
+    </div>
+
+    <!-- Embedded JavaScript code (unchanged) -->
+</body>
+</html>
